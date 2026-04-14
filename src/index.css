@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Georgia", serif;
+  
+  --color-primary: #006633;
+  --color-primary-dark: #004d26;
+  --color-accent: #C5A059;
+  --color-bg: #F8F9FA;
+  --color-surface: #FFFFFF;
+  --color-text: #1A1A1A;
+  --color-text-light: #6C757D;
+  --color-border: #E0E0E0;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text font-sans;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply text-text font-bold;
+  }
+}
